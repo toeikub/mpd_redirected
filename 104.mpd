@@ -1,85 +1,36 @@
-<?xml version="1.0"?>
-<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" xmlns:cenc="urn:mpeg:cenc:2013" profiles="urn:mpeg:dash:profile:isoff-live:2011" minBufferTime="PT5S" type="dynamic" publishTime="2023-09-25T06:22:34Z" availabilityStartTime="2023-09-18T04:18:07Z" minimumUpdatePeriod="PT5S" timeShiftBufferDepth="PT40S">
-    <Period id="0" start="PT0S">
-        <AdaptationSet id="0" contentType="video" width="1920" height="1080" frameRate="90000/3600" segmentAlignment="true" par="16:9">
-            <ContentProtection value="cenc" schemeIdUri="urn:mpeg:dash:mp4protection:2011" cenc:default_KID="0db89bae-8514-40a5-994f-5893ad480494" />
-            <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed">
-                <cenc:pssh>AAAARnBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAACYIARIQDbibroUUQKWZT1iTrUgElBoJY29yZXRydXN0IgMxMDQ4AA==</cenc:pssh>
-            </ContentProtection>
-            <ContentProtection schemeIdUri="urn:uuid:1077efec-c0b2-4d02-ace3-3c1e52e2fb4b">
-                <cenc:pssh>AAAAdHBzc2gBAAAAEHfv7MCyTQKs4zweUuL7SwAAAAUNuJuuhRRApZlPWJOtSASUDbibroUUQKWZT1iTrUgElA24m66FFEClmU9Yk61IBJQNuJuuhRRApZlPWJOtSASUhBpyv46aQTGe2eKEii+JeAAAAAA=</cenc:pssh>
-            </ContentProtection>
-            <SupplementalProperty schemeIdUri="urn:mpeg:dash:adaptation-set-switching:2016" value="1" />
-            <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main" />
-            <Representation id="0" bandwidth="4333080" codecs="hvc1.1.2.L120" mimeType="video/mp4" sar="1:1">
-                <SegmentTemplate timescale="90000" initialization="video/0/20230918T111807.video.M.mp4" media="video/0/$Time$.M.m4s" startNumber="122446">
-                    <SegmentTimeline>
-                        <S t="55100307600" d="450000" r="8" />
-                    </SegmentTimeline>
-                </SegmentTemplate>
-            </Representation>
-        </AdaptationSet>
-        <AdaptationSet id="1" contentType="video" maxWidth="1920" maxHeight="1080" frameRate="90000/3600" par="16:9">
-            <ContentProtection value="cenc" schemeIdUri="urn:mpeg:dash:mp4protection:2011" cenc:default_KID="0db89bae-8514-40a5-994f-5893ad480494" />
-            <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed">
-                <cenc:pssh>AAAARnBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAACYIARIQDbibroUUQKWZT1iTrUgElBoJY29yZXRydXN0IgMxMDQ4AA==</cenc:pssh>
-            </ContentProtection>
-            <ContentProtection schemeIdUri="urn:uuid:1077efec-c0b2-4d02-ace3-3c1e52e2fb4b">
-                <cenc:pssh>AAAAdHBzc2gBAAAAEHfv7MCyTQKs4zweUuL7SwAAAAUNuJuuhRRApZlPWJOtSASUDbibroUUQKWZT1iTrUgElA24m66FFEClmU9Yk61IBJQNuJuuhRRApZlPWJOtSASUhBpyv46aQTGe2eKEii+JeAAAAAA=</cenc:pssh>
-            </ContentProtection>
-            <SupplementalProperty schemeIdUri="urn:mpeg:dash:adaptation-set-switching:2016" value="0" />
-            <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main" />
-            <Representation id="1" bandwidth="4143320" codecs="avc1.4d4028" mimeType="video/mp4" sar="1:1" width="1920" height="1080">
-                <SegmentTemplate timescale="90000" initialization="video/1/20230918T111807.video.M.mp4" media="video/1/$Time$.M.m4s" startNumber="122446">
-                    <SegmentTimeline>
-                        <S t="55100307600" d="450000" r="8" />
-                    </SegmentTimeline>
-                </SegmentTemplate>
-            </Representation>
-            <Representation id="2" bandwidth="3272141" codecs="avc1.4d401f" mimeType="video/mp4" sar="1:1" width="1280" height="720">
-                <SegmentTemplate timescale="90000" initialization="video/2/20230918T111807.video.M.mp4" media="video/2/$Time$.M.m4s" startNumber="122446">
-                    <SegmentTimeline>
-                        <S t="55100307600" d="450000" r="8" />
-                    </SegmentTimeline>
-                </SegmentTemplate>
-            </Representation>
-            <Representation id="3" bandwidth="2178925" codecs="avc1.4d401e" mimeType="video/mp4" sar="1:1" width="768" height="432">
-                <SegmentTemplate timescale="90000" initialization="video/3/20230918T111807.video.M.mp4" media="video/3/$Time$.M.m4s" startNumber="122446">
-                    <SegmentTimeline>
-                        <S t="55100307600" d="450000" r="8" />
-                    </SegmentTimeline>
-                </SegmentTemplate>
-            </Representation>
-            <Representation id="5" bandwidth="1094904" codecs="avc1.4d401e" mimeType="video/mp4" sar="1:1" width="640" height="360">
-                <SegmentTemplate timescale="90000" initialization="video/4/20230918T111807.video.M.mp4" media="video/4/$Time$.M.m4s" startNumber="122446">
-                    <SegmentTimeline>
-                        <S t="55100311440" d="450000" r="8" />
-                    </SegmentTimeline>
-                </SegmentTemplate>
-            </Representation>
-        </AdaptationSet>
-        <AdaptationSet id="2" contentType="audio" lang="en" segmentAlignment="true">
-            <ContentProtection value="cenc" schemeIdUri="urn:mpeg:dash:mp4protection:2011" cenc:default_KID="0db89bae-8514-40a5-994f-5893ad480494" />
-            <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed">
-                <cenc:pssh>AAAARnBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAACYIARIQDbibroUUQKWZT1iTrUgElBoJY29yZXRydXN0IgMxMDQ4AA==</cenc:pssh>
-            </ContentProtection>
-            <ContentProtection schemeIdUri="urn:uuid:1077efec-c0b2-4d02-ace3-3c1e52e2fb4b">
-                <cenc:pssh>AAAAdHBzc2gBAAAAEHfv7MCyTQKs4zweUuL7SwAAAAUNuJuuhRRApZlPWJOtSASUDbibroUUQKWZT1iTrUgElA24m66FFEClmU9Yk61IBJQNuJuuhRRApZlPWJOtSASUhBpyv46aQTGe2eKEii+JeAAAAAA=</cenc:pssh>
-            </ContentProtection>
-            <Representation id="4" bandwidth="195246" codecs="mp4a.40.2" mimeType="audio/mp4" audioSamplingRate="48000">
-                <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
-                <SegmentTemplate timescale="90000" initialization="audio/0/20230918T111807.audio.M.mp4" media="audio/0/$Time$.M.m4s" startNumber="122446">
-                    <SegmentTimeline>
-                        <S t="55100251440" d="449280" r="1" />
-                        <S t="55101150000" d="451200" />
-                        <S t="55101601200" d="449280" />
-                        <S t="55102050480" d="451200" />
-                        <S t="55102501680" d="449280" r="1" />
-                        <S t="55103400240" d="451200" />
-                        <S t="55103851440" d="449280" />
-                    </SegmentTimeline>
-                </SegmentTemplate>
-            </Representation>
-        </AdaptationSet>
-    </Period>
+<?xml version="1.0" encoding="UTF-8"?><MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:cenc="urn:mpeg:cenc:2013" xmlns:mspr="urn:microsoft:playready" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" availabilityStartTime="2015-01-01T00:00:08Z" maxSegmentDuration="PT3S" minBufferTime="PT10S" minimumUpdatePeriod="PT2S" profiles="urn:mpeg:dash:profile:isoff-live:2011" publishTime="2023-10-15T14:35:17.096282Z" timeShiftBufferDepth="PT1M4S" type="dynamic" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd"><BaseURL xmlns="">/ais/play/origin/live/eds/V0162/DASH/</BaseURL>
+  <Period xmlns="" id="1" start="PT0S">
+    <AdaptationSet contentType="audio" group="1" id="1" lang="en" mimeType="audio/mp4" segmentAlignment="true">
+<ContentProtection cenc:default_KID="7372347d-df65-ab15-94ee-35362240dafa" schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc"/><ContentProtection schemeIdUri="urn:uuid:9A04F079-9840-4286-AB92-E65BE0885F95"/><ContentProtection schemeIdUri="urn:uuid:EDEF8BA9-79D6-4ACE-A3C8-27DCD51D21ED"/>      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
+      <SegmentTemplate initialization="V0162-$RepresentationID$-scale=24000-init.mp4" media="V0162-$RepresentationID$-scale=24000-$Time$.mp4" timescale="24000">
+        <SegmentTimeline>
+          <S d="48128" r="5" t="6655441153781"/>
+          <S d="47104"/>
+          <S d="48128" r="6"/>
+          <S d="47104"/>
+          <S d="48128" r="6"/>
+          <S d="47104"/>
+          <S d="48128" r="6"/>
+          <S d="47104"/>
+          <S d="48128"/>
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation audioSamplingRate="24000" bandwidth="64000" codecs="mp4a.40.2" id="mp4a_64000_eng=2">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet contentType="video" frameRate="25" group="2" id="2" maxBandwidth="5000000" maxHeight="1080" maxWidth="1920" mimeType="video/mp4" minBandwidth="400000" minHeight="270" minWidth="480" par="16:9" segmentAlignment="true" startWithSAP="1">
+<ContentProtection cenc:default_KID="7372347d-df65-ab15-94ee-35362240dafa" schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc"/><ContentProtection schemeIdUri="urn:uuid:9A04F079-9840-4286-AB92-E65BE0885F95"/><ContentProtection schemeIdUri="urn:uuid:EDEF8BA9-79D6-4ACE-A3C8-27DCD51D21ED"/>      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
+      <SegmentTemplate initialization="V0162-$RepresentationID$-scale=25-init.mp4" media="V0162-$RepresentationID$-scale=25-$Time$.mp4" timescale="25">
+        <SegmentTimeline>
+          <S d="50" r="31" t="6932751201"/>
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation bandwidth="400000" codecs="avc1.640029" height="270" id="avc1_400000=1" sar="1:1" width="480"/>
+      <Representation bandwidth="800000" codecs="avc1.640029" height="360" id="avc1_800000=3" sar="1:1" width="640"/>
+      <Representation bandwidth="1200000" codecs="avc1.640029" height="480" id="avc1_1200000=4" sar="1280:1281" width="854"/>
+      <Representation bandwidth="3000000" codecs="avc1.640029" height="720" id="avc1_3000000=5" sar="1:1" width="1280"/>
+      <Representation bandwidth="5000000" codecs="avc1.640029" height="1080" id="avc1_5000000=6" sar="1:1" width="1920"/>
+    </AdaptationSet>
+  </Period>
 </MPD>
