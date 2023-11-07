@@ -1,105 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" availabilityStartTime="1970-01-01T00:00:00Z" id="Config part of url maybe?" minBufferTime="PT2S" minimumUpdatePeriod="PT0S" profiles="urn:mpeg:dash:profile:isoff-live:2011,http://dashif.org/guidelines/dash-if-simple" publishTime="2023-07-05T08:32:59Z" timeShiftBufferDepth="PT5M" type="dynamic" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd">
-   <Location>https://ais-s.ais-vidnt.com/ais/play/origin/live/eds/V0162/DASH/V0162.mpd?location=working</Location>
-   <ProgramInformation>
-      <Title>Media Presentation Description from DASH-IF live simulator</Title>
-   </ProgramInformation>
-   <BaseURL>http://livesim.dashif.org/livesim/sts_1688545979/sid_ea5523e9/segtimeline_1/testpic_2s/</BaseURL>
-<Period id="p0" start="PT0S">
-      <AdaptationSet contentType="audio" lang="en" mimeType="audio/mp4" segmentAlignment="true" startWithSAP="1">
-         <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main" />
-         <SegmentTemplate initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/t$Time$.m4s" timescale="48000">
-<SegmentTimeline>
-<S d="95232" t="81050192544768" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" r="2" />
-<S d="95232" />
-<S d="96256" />
-</SegmentTimeline>
-</SegmentTemplate>
-         <Representation audioSamplingRate="48000" bandwidth="48000" codecs="mp4a.40.2" id="A48">
-            <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
-         </Representation>
-      </AdaptationSet>
-      <AdaptationSet contentType="video" maxFrameRate="60/2" maxHeight="360" maxWidth="640" mimeType="video/mp4" minHeight="360" minWidth="640" par="16:9" segmentAlignment="true" startWithSAP="1">
-         <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main" />
-         <SegmentTemplate initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/t$Time$.m4s" timescale="90000">
-<SegmentTimeline>
-<S d="180000" r="149" t="151969111020000" />
-</SegmentTimeline>
-</SegmentTemplate>
-         <Representation bandwidth="300000" codecs="avc1.64001e" frameRate="60/2" height="360" id="V300" sar="1:1" width="640" />
-      </AdaptationSet>
-   </Period>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MPD id="f08e80da-bf1d-4e3d-8899-f0f6155f6efa" profiles="urn:mpeg:dash:profile:isoff-main:2011" type="static" availabilityStartTime="2015-08-04T09:33:14.000Z" publishTime="2015-08-04T10:47:32.000Z" mediaPresentationDuration="P0Y0M0DT0H3M30.000S" minBufferTime="P0Y0M0DT0H0M1.000S" bitmovin:version="1.6.0" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:bitmovin="http://www.bitmovin.net/mpd/2015">
+    <Period>
+        <AdaptationSet id="1" lang="en" mimeType="audio/mp4" codecs="mp4a.40.2" bitmovin:label="English stereo">
+            <BaseURL>https://bitmovin-a.akamaihd.net/content/MI201109210084_1/mpds/</BaseURL>
+            <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+            <SegmentTemplate media="../audio/$RepresentationID$/dash/segment_$Number$.m4s" initialization="../audio/$RepresentationID$/dash/init.mp4" duration="191472" startNumber="0" timescale="48000"/>
+            <Representation id="1_stereo_128000" bandwidth="128000" audioSamplingRate="48000"/>
+        </AdaptationSet>
+        <AdaptationSet id="2" mimeType="video/mp4" codecs="avc1.42c00d">
+            <BaseURL>https://bitmovin-a.akamaihd.net/content/MI201109210084_1/mpds/</BaseURL>
+            <SegmentTemplate media="../video/$RepresentationID$/dash/segment_$Number$.m4s" initialization="../video/$RepresentationID$/dash/init.mp4" duration="100000" startNumber="0" timescale="25000"/>
+            <Representation id="720_2400000" bandwidth="2400000" width="1280" height="720" frameRate="25"/>
+            <SupplementalProperty schemeIdUri="urn:mpeg:dash:adaptation-set-switching:2016" value="3"/>
+        </AdaptationSet>
+        <AdaptationSet id="3" mimeType="video/mp4" codecs="avc1.42c00d">
+            <BaseURL>https://bitmovin-a.akamaihd.net/content/art-of-motion_drm/mpds/</BaseURL>
+            <SegmentTemplate media="../video/$RepresentationID$/cenc_dash/segment_$Number$.m4s" initialization="../video/$RepresentationID$/cenc_dash/init.mp4" duration="4000" startNumber="0" timescale="1000"/>
+            <Representation id="1080_4800000" bandwidth="4800000" width="1920" height="1080" frameRate="25"/>
+            <ContentProtection schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc" cenc:default_KID="eb676abb-cb34-5e96-bbcf-616630f1a3da" xmlns:cenc="urn:mpeg:cenc:2013"/>
+            <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed">
+                <cenc:pssh xmlns:cenc="urn:mpeg:cenc:2013">AAAAW3Bzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAADsIARIQ62dqu8s0Xpa7z2FmMPGj2hoNd2lkZXZpbmVfdGVzdCIQZmtqM2xqYVNkZmFsa3IzaioCSEQyAA==</cenc:pssh>
+            </ContentProtection>
+            <SupplementalProperty schemeIdUri="urn:mpeg:dash:adaptation-set-switching:2016" value="2"/>
+        </AdaptationSet>
+    </Period>
 </MPD>
