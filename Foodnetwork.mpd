@@ -1,120 +1,105 @@
-<?xml version="1.0" ?>
-<MPD mediaPresentationDuration="PT2M55.008S" minBufferTime="PT2.00S" profiles="'live'" type="static" xmlns="urn:mpeg:dash:schema:mpd:2011">
-  <BaseURL>https://ais-s.ais-vidnt.com/ais/play/origin/live/eds/V0162/DASH/V0162.mpd</BaseURL>
-  <!-- Created with Bento4 mp4-dash.py, VERSION=1.8.0-621 -->
-  <Period>
-    <!-- Video -->
-    <AdaptationSet maxHeight="2160" maxWidth="3840" mimeType="video/mp4" minHeight="1080" minWidth="1920" segmentAlignment="true" startWithSAP="1">
-      <SegmentTemplate initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1" timescale="60000">
-        <SegmentTimeline>
-          <S d="120120" r="86"/>
-          <S d="50050"/>
-        </SegmentTimeline>
-      </SegmentTemplate>
-      <Representation bandwidth="15134071" codecs="dvhe.08.09" frameRate="60000/1001" height="2160" id="video/hev1/1" scanType="progressive" width="3840"/>
-      <Representation bandwidth="15094138" codecs="dvhe.08.05" frameRate="60000/1001" height="1080" id="video/hev1/2" scanType="progressive" width="1920"/>
-    </AdaptationSet>	
-    <!-- <AdaptationSet maxHeight="2160" maxWidth="3840" mimeType="video/mp4" minHeight="1080" minWidth="1920" segmentAlignment="true" startWithSAP="1">
-      <SegmentTemplate initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1" timescale="60000">
-        <SegmentTimeline>
-          <S d="120120" r="86"/>
-          <S d="50050"/>
-        </SegmentTimeline>
-      </SegmentTemplate>
-      <Representation bandwidth="15134071" codecs="hev1.2.4.L153.b0" frameRate="60000/1001" height="2160" id="video/hev1/1" scanType="progressive" width="3840"/>
-      <Representation bandwidth="15094138" codecs="hev1.2.4.L153.b0" frameRate="60000/1001" height="1080" id="video/hev1/2" scanType="progressive" width="1920"/>
-    </AdaptationSet> -->
-    <!-- Audio -->
-    <AdaptationSet mimeType="audio/mp4" segmentAlignment="true" startWithSAP="1">
-      <SegmentTemplate initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1" timescale="48000">
-        <SegmentTimeline>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768" r="1"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768" r="1"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768" r="1"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768" r="1"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768" r="1"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768" r="1"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768" r="1"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768" r="1"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768" r="1"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768" r="1"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="95232"/>
-          <S d="96768"/>
-          <S d="39936"/>
-          <S d="142848"/>
-          <S d="6144"/>
-        </SegmentTimeline>
-      </SegmentTemplate>
-      <Representation audioSamplingRate="48000" bandwidth="641396" codecs="ec-3" id="audio/und/ec-3">
-        <AudioChannelConfiguration schemeIdUri="tag:dolby.com,2014:dash:audio_channel_configuration:2011" value="F801"/>
-		<SupplementalProperty schemeIdUri="tag:dolby.com,2018:dash:EC3_ExtensionType:2018" value="JOC" />
-		<SupplementalProperty schemeIdUri="tag:dolby.com,2018:dash:EC3_ExtensionComplexityIndex:2018" value="16" />		
-      </Representation>
-    </AdaptationSet>
-  </Period>
+<?xml version="1.0" encoding="utf-8"?>
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" availabilityStartTime="1970-01-01T00:00:00Z" id="Config part of url maybe?" minBufferTime="PT2S" minimumUpdatePeriod="PT0S" profiles="urn:mpeg:dash:profile:isoff-live:2011,http://dashif.org/guidelines/dash-if-simple" publishTime="2023-07-05T08:32:59Z" timeShiftBufferDepth="PT5M" type="dynamic" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd">
+   <Location>https://ais-s.ais-vidnt.com/ais/play/origin/live/eds/V0162/DASH/V0162.mpd?location=working</Location>
+   <ProgramInformation>
+      <Title>Media Presentation Description from DASH-IF live simulator</Title>
+   </ProgramInformation>
+   <BaseURL>http://livesim.dashif.org/livesim/sts_1688545979/sid_ea5523e9/segtimeline_1/testpic_2s/</BaseURL>
+<Period id="p0" start="PT0S">
+      <AdaptationSet contentType="audio" lang="en" mimeType="audio/mp4" segmentAlignment="true" startWithSAP="1">
+         <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main" />
+         <SegmentTemplate initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/t$Time$.m4s" timescale="48000">
+<SegmentTimeline>
+<S d="95232" t="81050192544768" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" r="2" />
+<S d="95232" />
+<S d="96256" />
+</SegmentTimeline>
+</SegmentTemplate>
+         <Representation audioSamplingRate="48000" bandwidth="48000" codecs="mp4a.40.2" id="A48">
+            <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+         </Representation>
+      </AdaptationSet>
+      <AdaptationSet contentType="video" maxFrameRate="60/2" maxHeight="360" maxWidth="640" mimeType="video/mp4" minHeight="360" minWidth="640" par="16:9" segmentAlignment="true" startWithSAP="1">
+         <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main" />
+         <SegmentTemplate initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/t$Time$.m4s" timescale="90000">
+<SegmentTimeline>
+<S d="180000" r="149" t="151969111020000" />
+</SegmentTimeline>
+</SegmentTemplate>
+         <Representation bandwidth="300000" codecs="avc1.64001e" frameRate="60/2" height="360" id="V300" sar="1:1" width="640" />
+      </AdaptationSet>
+   </Period>
 </MPD>
