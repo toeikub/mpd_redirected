@@ -1,36 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:cenc="urn:mpeg:cenc:2013" xmlns:mspr="urn:microsoft:playready" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" availabilityStartTime="2015-01-01T00:00:08Z" maxSegmentDuration="PT3S" minBufferTime="PT10S" minimumUpdatePeriod="PT2S" profiles="urn:mpeg:dash:profile:isoff-live:2011" publishTime="2023-10-15T14:35:17.096282Z" timeShiftBufferDepth="PT1M4S" type="dynamic" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd"><BaseURL xmlns="">/ais/play/origin/live/eds/V0162/DASH/</BaseURL>
-  <Period xmlns="" id="1" start="PT0S">
-    <AdaptationSet contentType="audio" group="1" id="1" lang="en" mimeType="audio/mp4" segmentAlignment="true">
-<ContentProtection cenc:default_KID="7372347d-df65-ab15-94ee-35362240dafa" schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc"/><ContentProtection schemeIdUri="urn:uuid:9A04F079-9840-4286-AB92-E65BE0885F95"/><ContentProtection schemeIdUri="urn:uuid:EDEF8BA9-79D6-4ACE-A3C8-27DCD51D21ED"/>      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
-      <SegmentTemplate initialization="V0162-$RepresentationID$-scale=24000-init.mp4" media="V0162-$RepresentationID$-scale=24000-$Time$.mp4" timescale="24000">
-        <SegmentTimeline>
-          <S d="48128" r="5" t="6655441153781"/>
-          <S d="47104"/>
-          <S d="48128" r="6"/>
-          <S d="47104"/>
-          <S d="48128" r="6"/>
-          <S d="47104"/>
-          <S d="48128" r="6"/>
-          <S d="47104"/>
-          <S d="48128"/>
-        </SegmentTimeline>
-      </SegmentTemplate>
-      <Representation audioSamplingRate="24000" bandwidth="64000" codecs="mp4a.40.2" id="mp4a_64000_eng=2">
-        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
-      </Representation>
-    </AdaptationSet>
-    <AdaptationSet contentType="video" frameRate="25" group="2" id="2" maxBandwidth="5000000" maxHeight="1080" maxWidth="1920" mimeType="video/mp4" minBandwidth="400000" minHeight="270" minWidth="480" par="16:9" segmentAlignment="true" startWithSAP="1">
-<ContentProtection cenc:default_KID="7372347d-df65-ab15-94ee-35362240dafa" schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc"/><ContentProtection schemeIdUri="urn:uuid:9A04F079-9840-4286-AB92-E65BE0885F95"/><ContentProtection schemeIdUri="urn:uuid:EDEF8BA9-79D6-4ACE-A3C8-27DCD51D21ED"/>      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
-      <SegmentTemplate initialization="V0162-$RepresentationID$-scale=25-init.mp4" media="V0162-$RepresentationID$-scale=25-$Time$.mp4" timescale="25">
-        <SegmentTimeline>
-          <S d="50" r="31" t="6932751201"/>
-        </SegmentTimeline>
-      </SegmentTemplate>
-      <Representation bandwidth="400000" codecs="avc1.640029" height="270" id="avc1_400000=1" sar="1:1" width="480"/>
-      <Representation bandwidth="800000" codecs="avc1.640029" height="360" id="avc1_800000=3" sar="1:1" width="640"/>
-      <Representation bandwidth="1200000" codecs="avc1.640029" height="480" id="avc1_1200000=4" sar="1280:1281" width="854"/>
-      <Representation bandwidth="3000000" codecs="avc1.640029" height="720" id="avc1_3000000=5" sar="1:1" width="1280"/>
-      <Representation bandwidth="5000000" codecs="avc1.640029" height="1080" id="avc1_5000000=6" sar="1:1" width="1920"/>
-    </AdaptationSet>
-  </Period>
-</MPD>
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#KODIPROP:inputstream.adaptive.license_key=https://license.ais-vidnt.com/ri/licenseManager.do?pallycon-customdata-v2=eyJkcm1fdHlwZSI6IldpZGV2aW5lIiwic2l0ZV9pZCI6IktPUVIiLCJ1c2VyX2lkIjoidHJfbllFMHFJczVEeWVYcXZYcUJrSVEiLCJjaWQiOiJWMDE2MiIsInRva2VuIjoiNmpXYnRCWG9Mdm81alhTcGZuNHNXVDByVDRGR2pxK21ZYy9lb09lQ0pKZ0hOWU1uLzFxa0gzdXFXU3ovNU1uZzVFWHVaNTJucytOWlFuTXpJdU1mS1BsYnJ1bzY1dDJWWXlHYlBMa3lMMFJYcm9SK1ltL01OamRTSnlkYmFOa0UiLCJ0aW1lc3RhbXAiOiIyMDIzLTExLTA2VDE2OjI5OjQ0WiIsImhhc2giOiIra3V2UU1mbThzL04vVmROR0RHLzJGcTVTbER0TWdKOGhzdStkdTdPMjJFPSJ9
+https://ais-s.ais-vidnt.com/ais/play/origin/live/eds/V0162/DASH/V0162.mpd
